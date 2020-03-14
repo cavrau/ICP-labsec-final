@@ -25,7 +25,9 @@ SECRET_KEY = 'iprh(go*zmw2btgx!cjn78c_8o0=spyzr9)jdv(yq4@95-ihkf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'morning-falls-91705.herokuapp.com'
+]
 
 
 # Application definition

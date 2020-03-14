@@ -26,7 +26,7 @@ SECRET_KEY = 'iprh(go*zmw2btgx!cjn78c_8o0=spyzr9)jdv(yq4@95-ihkf'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'morning-falls-91705.herokuapp.com'
+    'morning-falls-91705.herokuapp.com', 'localhost'
 ]
 
 

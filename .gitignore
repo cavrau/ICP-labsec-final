@@ -1,4 +1,2 @@
 .env
 .vscode
-.cert
-db.sqlite3

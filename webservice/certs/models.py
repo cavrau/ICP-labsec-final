@@ -2,16 +2,15 @@ from django.db import models
 
 # Create your models here.
 
-class File(models.Model):   
-    archive = models.FileField(null=False, upload_to='webservice/archives')
+
+class File(models.Model):
+    archive = models.FileField(null=False, upload_to=f'archives')
     sha_256 = models.CharField(max_length=256)
 
-class KeyPair(models.Model):
-    public_key = models.CharField(max_length=2048)
-    private_key = models.CharField(max_length=2048)
 
-class Certificate(model.Model):
-    subject = models.CharField()
-    serial_number = models.CharField()
-    issuer = models.CharField()
-    certificate = models.CharField()
+class Certificate(models.Model):
+    subject = models.CharField(max_length=200000)
+    serial_number = models.CharField(max_length=200000)
+    subject_public_key = models.FileField(null=False, upload_to=f'keys')
+    issuer = models.CharField(max_length=200000)
+    certificate = models.FileField(null=False, upload_to=f'certificate')
